@@ -1,0 +1,96 @@
+
+        /* --- GLOBAL STYLES --- */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Arial, sans-serif;
+        }
+
+       
+        
+
+     
+
+        /* --- MAIN HEADER --- */
+        header {
+            background: white;
+            padding: 10px 60px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo-group { display: flex; align-items: center; gap: 15px; }
+        
+        /* PLACEHOLDER: MAIN LOGO (Left side of text) */
+        .main-logo-img { width: 60px; height: 60px; border-radius: 50%; }
+
+        .logo-text h1 { font-size: 22px; color: #1a237e; line-height: 1; }
+        .logo-text p { font-size: 14px; color: #2e7d32; font-weight: bold; }
+
+        nav ul { list-style: none; display: flex; gap: 20px; }
+        nav ul li a { 
+            text-decoration: none; 
+            color: #333; 
+            font-weight: 600; 
+            font-size: 14px; 
+            text-transform: uppercase;
+        }
+        nav ul li a:hover { color: #1a237e; }
+
+        /* --- HERO SECTION --- */
+        .hero {
+            background: linear-gradient(rgba(26, 35, 126, 0.8), rgba(26, 35, 126, 0.8)), 
+                        url('pic1.jpg'); /* PLACEHOLDER: HERO BACKGROUND */
+            background-size: cover;
+            background-position: center;
+            padding: 60px;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .hero-container {
+            display: flex;
+            max-width: 1200px;
+            width: 100%;
+            align-items: center;
+            gap: 50px;
+        }
+
+        /* Left Side: Featured Image */
+        .hero-image-card {
+            flex: 1;
+            background: white;
+            padding: 10px;
+            border-radius: 50px 0 50px 0; /* Rounded corners like the image */
+            overflow: hidden;
+        }
+        .hero-image-card img {
+            width: 100%;
+            display: block;
+            border-radius: 40px 0 40px 0;
+        }
+
+        /* Right Side: Welcome Text & Seals */
+        .hero-content { flex: 1; text-align: center; }
+        .hero-content h2 { font-size: 20px; text-transform: uppercase; }
+        .hero-content h3 { font-size: 40px; color: #fdd835; margin-bottom: 20px; }
+        
+        .seals-group { display: flex; justify-content: center; gap: 20px; margin-top: 20px; }
+        /* PLACEHOLDER: CIRCULAR SEALS */
+        .seal-img { width: 100px; height: 100px; border-radius: 50%; background: white; padding: 5px; }
+
+        /* --- E-GOVERNANCE SECTION --- */
+      
+        @media (max-width: 900px) {
+            .hero-container { flex-direction: column; }
+            .top-bar, header { padding: 10px 20px; }
+        }
+    
